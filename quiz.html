@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Module - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Medical Ethics Knowledge Assessment</h1>
+            <p>Test your understanding of key ethical principles and concepts</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="quiz-module">
+            <div class="quiz-selection">
+                <h2>Select a Quiz Topic</h2>
+                <div class="quiz-topics">
+                    <div class="quiz-topic-card" data-quiz="general-principles">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>General Ethical Principles</h3>
+                        <p>Test your knowledge of fundamental ethical principles in healthcare</p>
+                        <span class="quiz-difficulty">Beginner</span>
+                    </div>
+                    
+                    <div class="quiz-topic-card" data-quiz="informed-consent">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <h3>Informed Consent</h3>
+                        <p>Questions about patient autonomy and the informed consent process</p>
+                        <span class="quiz-difficulty">Intermediate</span>
+                    </div>
+                    
+                    <div class="quiz-topic-card" data-quiz="confidentiality">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Confidentiality</h3>
+                        <p>Explore scenarios related to patient privacy and confidentiality</p>
+                        <span class="quiz-difficulty">Intermediate</span>
+                    </div>
+                    
+                    <div class="quiz-topic-card" data-quiz="end-of-life">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>End-of-Life Care</h3>
+                        <p>Ethical challenges in palliative care and end-of-life decisions</p>
+                        <span class="quiz-difficulty">Advanced</span>
+                    </div>
+                    
+                    <div class="quiz-topic-card" data-quiz="professional-relationships">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Professional Relationships</h3>
+                        <p>Questions about collegial relationships and interprofessional ethics</p>
+                        <span class="quiz-difficulty">Intermediate</span>
+                    </div>
+                    
+                    <div class="quiz-topic-card" data-quiz="research-ethics">
+                        <div class="quiz-topic-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Research Ethics</h3>
+                        <p>Ethical considerations in medical research and clinical trials</p>
+                        <span class="quiz-difficulty">Advanced</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <h2 id="quiz-title">Quiz Title</h2>
+                    <div id="quiz-progress">
+                        <p>Question <span id="current-question">1</span> of <span id="total-questions">10</span></p>
+                        <div class="quiz-progress-bar">
+                            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="quiz-timer" id="quiz-timer">
+                        <i class="fas fa-clock"></i> <span id="timer-display">00:00</span>
+                    </div>
+                </div>
+                
+                <div class="quiz-content">
+                    <form id="quiz-form">
+                        <div id="question-container"></div>
+                        
+                        <div class="quiz-navigation">
+                            <button type="button" id="prev-question-btn" class="btn btn-secondary">Previous</button>
+                            <button type="button" id="next-question-btn" class="btn btn-primary">Next</button>
+                            <button type="submit" id="submit-quiz-btn" class="btn btn-accent" style="display: none;">Submit Quiz</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="quiz-results" style="display: none;">
+                <div class="results-header">
+                    <h2>Quiz Results</h2>
+                </div>
+                
+                <div class="results-summary">
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="score-percentage">0%</span>
+                        </div>
+                        <p>You scored <span id="score-fraction">0/0</span></p>
+                    </div>
+                    
+                    <div class="performance-feedback" id="performance-feedback"></div>
+                </div>
+                
+                <div class="results-details">
+                    <h3>Question Review</h3>
+                    <div id="question-review"></div>
+                </div>
+                
+                <div class="results-actions">
+                    <button id="retry-quiz-btn" class="btn btn-secondary">Retry Quiz</button>
+                    <button id="return-topics-btn" class="btn btn-primary">Try Another Topic</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Malaysian Medical Ethics Curriculum</h3>
+                    <p>A comprehensive educational resource for professional, ethical, and legal issues in Malaysian medical practice.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../lectures.html">Lectures</a></li>
+                        <li><a href="../case-studies.html">Case Studies</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malaysian Medical Ethics Curriculum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quiz data
+            const quizzes = {
+                'general-principles': {
+                    title: 'General Ethical Principles Quiz',
+                    questions: [
+                        {
+                            type: 'mcq',
+                            question: 'Which ethical principle emphasizes the obligation to act for the benefit of others?',
+                            options: [
+                                'Autonomy',
+                                'Beneficence',
+                                'Justice',
+                                'Non-maleficence'
+                            ],
+                            correctAnswer: 1,
+                            explanation: 'Beneficence refers to actions that promote the well-being of others. In medical ethics, it means healthcare providers have a duty to act in the best interest of their patients.'
+                        },
+                        {
+                            type: 'mcq',
+                            question: 'The principle of "primum non nocere" refers to:',
+                            options: [
+                                'Respecting patient autonomy',
+                                'Ensuring fair distribution of resources',
+                                'Doing no harm',
+                                'Maintaining patient confidentiality'
+                            ],
+                            correctAnswer: 2,
+                            explanation: '"Primum non nocere" is Latin for "first, do no harm" and relates to the ethical principle of non-maleficence, which obligates healthcare providers to avoid causing harm to patients.'
+                        },
+                        {
+                            type: 'mcq',
+                            question: 'In the Malaysian context, which of the following best reflects the principle of justice in healthcare?',
+                            options: [
+                                'Providing the same treatment to all patients regardless of need',
+                                'Allocating resources based on ability to pay',
+                                'Distributing healthcare resources equitably based on need',
+                                'Prioritizing treatment for the most socially valuable patients'
+                            ],
+                            correctAnswer: 2,
+                            explanation: 'Justice in healthcare refers to fair, equitable, and appropriate distribution of healthcare resources and treatments. In the Malaysian context, this means allocating resources based on medical need rather than social status, wealth, or other non-medical factors.'
+                        },
+                        {
+                            type: 'mcq',
+                            question: 'Which ethical principle is most directly concerned with a patient\'s right to make their own healthcare decisions?',
+                            options: [
+                                'Autonomy',
+                                'Beneficence',
+                                'Justice',
+                                'Utility'
+                            ],
+                            correctAnswer: 0,
+                            explanation: 'Autonomy refers to the right of patients to make their own decisions about their medical care without undue influence from others. It involves respecting an individual\'s capacity for self-determination.'
+                        },
+                        {
+                            type: 'mcq',
+                            question: 'When ethical principles conflict in a clinical situation, the most appropriate approach is to:',
+                            options: [
+                                'Always prioritize patient autonomy above all other principles',
+                                'Follow hospital policy regardless of the specific situation',
+                                'Carefully weigh competing principles considering the specific context',
+                                'Defer to the most senior healthcare provider\'s judgment'
+                            ],
+                            correctAnswer: 2,
+                            explanation: 'Ethical dilemmas occur when principles conflict. The most appropriate approach is to carefully consider the specific context, weigh the competing principles, and determine which takes precedence in that particular situation. This requires thoughtful ethical reasoning rather than rigid application of rules.'
+                        },
+                        {
+                            type: 'true-false',
+                            question: 'In Malaysian healthcare ethics, cultural and religious values should be considered alongside universal ethical principles.',
+                            correctAnswer: true,
+                            explanation: 'True. While universal ethical principles provide a foundation for healthcare ethics, their application should be sensitive to Malaysia\'s cultural and religious diversity. Respecting patients\' cultural and religious values is an important aspect of ethical healthcare practice in Malaysia.'
+                        },
+                        {
+                            type: 'true-false',
+                            question: 'The principle of confidentiality means that patient information should never be disclosed under any circumstances.',
+                            correctAnswer: false,
+                            explanation: 'False. While confidentiality is an important ethical principle, there are exceptions where disclosure may be ethically justified or legally required, such as when there is a risk of serious harm to the patient or others, for public health reporting, or when required by law.'
+                        },
+                        {
+                            type: 'matching',
+                            question: 'Match each ethical principle with its correct description:',
+                            items: [
+                                'Autonomy',
+                                'Beneficence',
+                                'Non-maleficence',
+                                'Justice'
+                            ],
+                            matches: [
+                                'Respecting patients\' right to make their own decisions',
+                                'Acting to benefit patients and promote their welfare',
+                                'Avoiding harm to patients',
+                                'Fair distribution of benefits and burdens in healthcare'
+                            ],
+                            correctMatches: [0, 1, 2, 3],
+                            explanation: 'These four principles form the cornerstone of medical ethics. Understanding each principle and how they relate to clinical practice is essential for ethical decision-making.'
+                        },
+                        {
+                            type: 'short-answer',
+                            question: 'Describe how the principle of autonomy might be applied differently in Malaysian culture compared to Western healthcare settings.',
+                            sampleAnswer: 'In Malaysian culture, autonomy often has a more relational or family-centered dimension compared to the more individualistic approach in Western healthcare. Family involvement in medical decision-making is common and culturally expected in Malaysia, with many p<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

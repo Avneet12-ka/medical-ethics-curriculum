@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 9: Interprofessional Conflict - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>Case Study 9: Interprofessional Conflict</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="navigation">
+                <button id="prev-btn" disabled>Previous</button>
+                <span id="current-section">Introduction</span>
+                <button id="next-btn">Next</button>
+            </div>
+        </header>
+
+        <main id="content-area">
+            <!-- Introduction Section -->
+            <section id="introduction" class="active">
+                <h2>Introduction</h2>
+                <p>Welcome to Case Study 9: Interprofessional Conflict. In this interactive case study, you will explore the ethical dimensions of professional relationships and conflict resolution in Malaysian healthcare settings.</p>
+                <p>You will follow a team of healthcare professionals at Hospital Kuala Lumpur as they navigate complex interprofessional dynamics, communication challenges, and ethical dilemmas that arise when team members disagree about patient care.</p>
+                <p>Throughout this case study, you will be presented with ethical dilemmas and asked to make decisions. Your choices will help you understand the practical application of professional ethics principles in the Malaysian healthcare context.</p>
+                <div class="action-buttons">
+                    <button id="start-case-btn" class="primary-btn" onclick="navigateToSection('characters')">Begin Case Study</button>
+                    <button id="view-preknowledge-btn" class="secondary-btn" onclick="navigateToSection('pre-knowledge')">Review Pre-Knowledge Materials</button>
+                </div>
+            </section>
+
+            <!-- Pre-Knowledge Materials Section -->
+            <section id="pre-knowledge">
+                <h2>Key Concepts in Professional Relationships</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Ethical Principles in Collegial Relationships</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Respect for Colleagues:</strong> Recognizing the dignity and value of all healthcare team members</li>
+                                <li><strong>Integrity:</strong> Maintaining honesty and trustworthiness in professional communications</li>
+                                <li><strong>Justice:</strong> Treating colleagues fairly and equitably</li>
+                                <li><strong>Beneficence:</strong> Working together for patient benefit</li>
+                                <li><strong>Fidelity:</strong> Maintaining loyalty to professional commitments</li>
+                                <li><strong>Solidarity:</strong> Supporting colleagues in difficult circumstances</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Professional Codes and Guidelines</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Malaysian Medical Council Code of Professional Conduct:</strong> Sections on relationships with colleagues</li>
+                                <li><strong>Malaysian Nursing Board Code of Professional Conduct:</strong> Guidelines for nurse-physician relationships</li>
+                                <li><strong>Allied Health Professions Act Regulations:</strong> Standards for interprofessional interactions</li>
+                                <li><strong>Hospital Bylaws and Policies:</strong> Institutional rules governing professional relationships</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Cultural Dimensions of Professional Relationships</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Hierarchical Structures:</strong> Traditional respect for seniority and authority</li>
+                                <li><strong>Collectivist Values:</strong> Emphasis on group harmony over individual assertion</li>
+                                <li><strong>Indirect Communication:</strong> Preference for non-confrontational approaches</li>
+                                <li><strong>Face-Saving Practices:</strong> Avoiding public criticism or disagreement</li>
+                                <li><strong>Ethnic and Religious Diversity:</strong> Varying cultural norms across Malaysia's multicultural society</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Interprofessional Collaboration Models</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Team-Based Care:</strong> Coordinated approach involving multiple disciplines</li>
+                                <li><strong>Shared Decision-Making:</strong> Collaborative determination of care plans</li>
+                                <li><strong>Role Clarity:</strong> Understanding scope of practice and responsibilities</li>
+                                <li><strong>Mutual Respect:</strong> Valuing diverse professional contributions</li>
+                                <li><strong>Information Sharing:</strong> Effective communication across disciplines</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Conflict Resolution Strategies</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Direct Communication:</strong> Clear, respectful expression of concerns</li>
+                                <li><strong>Active Listening:</strong> Attentive engagement with others' perspectives</li>
+                                <li><strong>Interest-Based Problem Solving:</strong> Focusing on underlying needs rather than positions</li>
+                                <li><strong>Mediation:</strong> Third-party facilitation of difficult conversations</li>
+                                <li><strong>Escalation Pathways:</strong> Appropriate channels for unresolved conflicts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="back-to-intro-btn" class="secondary-btn" onclick="navigateToSection('introduction')">Back to Introduction</button>
+                    <button id="start-from-preknowledge-btn" class="primary-btn" onclick="navigateToSection('characters')">Begin Case Study</button>
+                </div>
+            </section>
+
+            <!-- Character Introduction Section -->
+            <section id="characters">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-grid">
+                    <div class="character-card">
+                        <div class="character-image" id="dr-ahmad-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Dr. Ahmad</div>
+                        </div>
+                        <h3>Dr. Ahmad bin Hassan</h3>
+                        <p>Male Malay physician, mid-40s</p>
+                        <p>Senior Consultant, Internal Medicine</p>
+                        <p>Traditional, hierarchical approach to healthcare</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="sister-mei-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Sister Mei</div>
+                        </div>
+                        <h3>Sister Mei Ling</h3>
+                        <p>Female Chinese-Malaysian, late 30s</p>
+                        <p>Nurse Manager, Medical Ward</p>
+                        <p>Experienced, patient advocate, diplomatic</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="dr-kumar-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Dr. Kumar</div>
+                        </div>
+                        <h3>Dr. Kumar Rajan</h3>
+                        <p>Male Indian-Malaysian, early 30s</p>
+                        <p>Medical Officer, Internal Medicine</p>
+                        <p>Recently returned from training abroad, progressive views</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="encik-tan-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Encik Tan</div>
+                        </div>
+                        <h3>Encik Tan Wei Jie</h3>
+                        <p>Male Chinese-Malaysian, mid-60s</p>
+                        <p>Patient with complex medical needs</p>
+                        <p>Traditional values, prefers family involvement in decisions</p>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="continue-to-scene1-btn" class="primary-btn" onclick="navigateToSection('scene1')">Continue to Scene 1</button>
+                </div>
+            </section>
+
+            <!-- Scene 1 Section -->
+            <section id="scene1">
+                <h2>Scene 1: The Ward Round Disagreement</h2>
+                
+                <div class="scene-container">
+                    <div class="scene-image" id="scene1-image">
+                        <!-- Scene image placeholder -->
+                        <div class="placeholder-image">Medical Ward, Hospital Kuala Lumpur</div>
+                    </div>
+                    
+                    <div class="scene-dialog">
+                        <p class="scene-caption">Medical Ward, Hospital Kuala Lumpur, Morning Ward Round</p>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Ahmad:</p>
+                            <p class="character-speech">"Encik Tan's condition has stabilized, but he still requires close monitoring. We'll continue with the current treatment plan."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Kumar:</p>
+                            <p class="character-speech">"With respect, Dr. Ahmad, I've been reviewing the latest guidelines. There's a newer treatment approach that might be more effective for his condition."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Ahmad:</p>
+                            <p class="character-speech">"I'm familiar with those guidelines, Dr. Kumar. In my experience, the traditional approach works well for our patient population. We'll continue as planned."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Sister Mei:</p>
+                            <p class="character-speech">"Excuse me, doctors. Encik Tan has been asking questions about his treatment options. He seems interested in understanding all possibilities."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Ahmad:</p>
+                            <p class="character-speech">"Thank you, Sister Mei. I'll speak with him later. For now, let's continue with our rounds."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Kumar:</p>
+                            <p class="character-speech">"(After ward round, speaking privately to Sister Mei) I'm concerned that we're not considering the best evidence-based approach for Encik Tan."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Sister Mei:</p>
+                            <p class="character-speech">"I understand your concern, Dr. Kumar. This is a challenging situation. What do you think would be the best way forward?"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="decision-point">
+                        <h3>DECISION POINT</h3>
+                        <p>As Dr. Kumar, what is the most appropriate approach to address this disagreement about Encik Tan's care?</p>
+                        
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="scene1-decision" id="scene1-option-a" value="A" data-correct="false">
+                                <label for="scene1-option-a">A) Defer to Dr. Ahmad's experience and authority without further discussion</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" name="scene1-decision" id="scene1-option-b" value="B" data-correct="false">
+                                <label for="scene1-option-b">B) Discuss your concerns directly with Encik Tan and his family</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" name="scene1-decision" id="<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

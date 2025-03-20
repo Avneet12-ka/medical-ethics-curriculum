@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Patient Avatar -->
+  <!-- Head -->
+  <circle cx="100" cy="70" r="50" fill="#f5d0b0" />
+  <!-- Hair -->
+  <path d="M60 50 Q 60 30 100 30 Q 140 30 140 50 L 140 70 Q 120 80 80 80 Q 60 70 60 50" fill="#808080" />
+  <!-- Face -->
+  <circle cx="80" cy="65" r="5" fill="#2b2b2b" /> <!-- Left eye -->
+  <circle cx="120" cy="65" r="5" fill="#2b2b2b" /> <!-- Right eye -->
+  <path d="M90 85 Q 100 80 110 85" fill="none" stroke="#2b2b2b" stroke-width="2" /> <!-- Slight frown -->
+  <!-- Hospital Gown -->
+  <path d="M60 100 L 60 180 L 140 180 L 140 100 Q 120 110 100 110 Q 80 110 60 100" fill="#a8e6ff" stroke="#cccccc" stroke-width="2" />
+  <!-- Hospital Bracelet -->
+  <rect x="70" y="120" width="20" height="10" fill="#ffffff" stroke="#2b2b2b" stroke-width="1" />
+  <!-- Tired Expression Lines -->
+  <path d="M75 55 Q 70 50 65 55" fill="none" stroke="#2b2b2b" stroke-width="1" /> <!-- Left brow furrow -->
+  <path d="M125 55 Q 130 50 135 55" fill="none" stroke="#2b2b2b" stroke-width="1" /> <!-- Right brow furrow -->
+</svg>

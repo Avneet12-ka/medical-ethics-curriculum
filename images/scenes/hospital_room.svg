@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Hospital Room Scene -->
+  
+  <!-- Background Wall -->
+  <rect x="0" y="0" width="600" height="400" fill="#f0f4f7" />
+  
+  <!-- Floor -->
+  <rect x="0" y="300" width="600" height="100" fill="#e6e6e6" />
+  
+  <!-- Window -->
+  <rect x="400" y="50" width="150" height="200" fill="#a8e6ff" stroke="#2b2b2b" stroke-width="3" />
+  <line x1="475" y1="50" x2="475" y2="250" stroke="#2b2b2b" stroke-width="3" />
+  <line x1="400" y1="150" x2="550" y2="150" stroke="#2b2b2b" stroke-width="3" />
+  
+  <!-- Hospital Bed -->
+  <rect x="100" y="250" width="250" height="80" fill="#ffffff" stroke="#2b2b2b" stroke-width="3" />
+  <rect x="100" y="230" width="250" height="20" fill="#4a90e2" stroke="#2b2b2b" stroke-width="2" />
+  <rect x="120" y="330" width="20" height="20" fill="#2b2b2b" /> <!-- Bed leg -->
+  <rect x="310" y="330" width="20" height="20" fill="#2b2b2b" /> <!-- Bed leg -->
+  
+  <!-- Bedside Table -->
+  <rect x="50" y="270" width="40" height="80" fill="#d9d9d9" stroke="#2b2b2b" stroke-width="2" />
+  <rect x="55" y="270" width="30" height="10" fill="#ffffff" stroke="#2b2b2b" stroke-width="1" /> <!-- Drawer -->
+  
+  <!-- Medical Equipment -->
+  <rect x="370" y="270" width="50" height="80" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="2" /> <!-- Monitor stand -->
+  <rect x="360" y="200" width="70" height="70" fill="#2b2b2b" stroke="#000000" stroke-width="2" /> <!-- Monitor -->
+  <rect x="365" y="205" width="60" height="50" fill="#a8e6ff" /> <!-- Monitor screen -->
+  <path d="M395 230 L 385 240 L 405 240 Z" fill="#4a90e2" /> <!-- ECG line -->
+  <path d="M405 240 L 415 220 L 425 240" fill="none" stroke="#4a90e2" stroke-width="2" /> <!-- ECG line -->
+  
+  <!-- IV Stand -->
+  <line x1="450" y1="150" x2="450" y2="350" stroke="#2b2b2b" stroke-width="3" />
+  <circle cx="450" cy="150" r="10" fill="#ffffff" stroke="#2b2b2b" stroke-width="2" />
+  <rect x="440" y="160" width="20" height="30" fill="#ffffff" stroke="#2b2b2b" stroke-width="1" /> <!-- IV bag -->
+  
+  <!-- Door -->
+  <rect x="20" y="100" width="80" height="180" fill="#ffffff" stroke="#2b2b2b" stroke-width="3" />
+  <circle cx="90" cy="190" r="5" fill="#4a90e2" /> <!-- Doorknob -->
+</svg>

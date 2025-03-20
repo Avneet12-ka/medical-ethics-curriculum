@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Informed Consent Challenges - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Study 4: Informed Consent Challenges</h1>
+            <p>Interactive exploration of informed consent issues in multicultural Malaysian healthcare</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="case-study-container">
+            <div class="case-navigation">
+                <a href="../case-studies.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Case Studies</a>
+                <div class="progress-indicator">
+                    <span class="progress-text">Progress: <span id="progressPercentage">0%</span></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-section active" id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to this interactive case study on informed consent challenges within the Malaysian healthcare context. This case will explore the complex ethical issues that arise when obtaining informed consent in a multicultural society with diverse languages, educational backgrounds, and cultural perspectives on healthcare decision-making.</p>
+                
+                <p>As you work through this case, you'll be asked to make decisions at critical points, and your choices will influence how the scenario unfolds. The case will challenge you to apply ethical principles while considering Malaysian cultural contexts and legal requirements.</p>
+                
+                <h3>Learning Objectives</h3>
+                <p>By completing this case study, you will be able to:</p>
+                <ul>
+                    <li>Identify key challenges in obtaining valid informed consent in multicultural Malaysian settings</li>
+                    <li>Apply ethical principles to informed consent processes with patients from diverse backgrounds</li>
+                    <li>Navigate language barriers and cultural differences in healthcare decision-making</li>
+                    <li>Balance respect for family involvement with patient autonomy</li>
+                    <li>Develop strategies for ensuring meaningful informed consent in complex situations</li>
+                </ul>
+                
+                <div class="pre-knowledge">
+                    <h3>Pre-Knowledge Check</h3>
+                    <p>Before beginning this case, it's helpful to have a basic understanding of:</p>
+                    <ul>
+                        <li>The four elements of valid informed consent (disclosure, understanding, voluntariness, and capacity)</li>
+                        <li>Malaysian legal requirements for informed consent</li>
+                        <li>Cultural factors that influence healthcare decision-making in Malaysian society</li>
+                        <li>The ethical principle of respect for autonomy</li>
+                    </ul>
+                    <p>If you need to review these concepts, please refer to Lecture 3: Informed Consent and Patient Autonomy in this curriculum.</p>
+                </div>
+                
+                <button class="btn btn-primary next-section">Begin Case Study</button>
+            </div>
+
+            <div class="case-section" id="character-intro">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/medical_student.svg" alt="Dr. Aisha">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Aisha binti Yusof</h3>
+                        <p><strong>Role:</strong> Junior Medical Officer at Hospital Kuala Lumpur</p>
+                        <p><strong>Background:</strong> Dr. Aisha is a recent medical graduate who is passionate about patient rights and ethical practice. She speaks Malay, English, and basic Mandarin. She is committed to ensuring patients fully understand their treatment options but sometimes struggles with the practical challenges of obtaining informed consent in busy clinical settings.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/doctor_male.svg" alt="Dr. Tan">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Tan Wei Ming</h3>
+                        <p><strong>Role:</strong> Senior Consultant Surgeon</p>
+                        <p><strong>Background:</strong> Dr. Tan is an experienced surgeon with 20 years of practice. He is highly skilled technically but sometimes impatient with lengthy consent discussions. He believes that patients should trust their doctors' expertise and that too much information can unnecessarily frighten patients.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/patient_elderly.svg" alt="Puan Fatimah">
+                    </div>
+                    <div class="character-info">
+                        <h3>Puan Fatimah binti Abdullah</h3>
+                        <p><strong>Role:</strong> Patient, 72-year-old retired teacher</p>
+                        <p><strong>Background:</strong> Puan Fatimah has been diagnosed with gallbladder cancer requiring surgery. She speaks Malay and limited English. She is educated but has limited health literacy. She has traditional beliefs about illness and healing and typically relies on her son to make important decisions.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_male.svg" alt="Encik Ahmad">
+                    </div>
+                    <div class="character-info">
+                        <h3>Encik Ahmad bin Abdullah</h3>
+                        <p><strong>Role:</strong> Puan Fatimah's son</p>
+                        <p><strong>Background:</strong> Ahmad is a 45-year-old business executive who is very protective of his mother. He speaks fluent English and Malay and has researched his mother's condition extensively online. He believes his mother should not be told the full extent of her diagnosis to avoid causing her distress.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/nurse.svg" alt="Sister Mei Ling">
+                    </div>
+                    <div class="character-info">
+                        <h3>Sister Mei Ling</h3>
+                        <p><strong>Role:</strong> Senior Ward Nurse</p>
+                        <p><strong>Background:</strong> Sister Mei Ling has worked at the hospital for 15 years and has extensive experience with patients from diverse cultural backgrounds. She speaks Malay, English, Mandarin, and Cantonese, often serving as an informal translator. She is skilled at explaining medical concepts in simple terms.</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+                <button class="btn btn-primary next-section">Continue to Scenario</button>
+            </div>
+
+            <div class="case-section" id="scene1">
+                <h2>Scene 1: The Initial Consultation</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/clinic_waiting_room.svg" alt="Hospital Consultation Room">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p>Dr. Aisha and Dr. Tan are meeting with Puan Fatimah and her son Ahmad to discuss Puan Fatimah's diagnosis and treatment plan. Puan Fatimah has been diagnosed with gallbladder cancer that requires surgical intervention.</p>
+                        
+                        <p><strong>Dr. Tan:</strong> "Good morning, Puan Fatimah, Encik Ahmad. We've received the results of Puan Fatimah's tests, and I'm afraid they confirm our suspicion of gallbladder cancer. We need to perform surgery to remove the gallbladder and possibly some surrounding tissue."</p>
+                        
+                        <p>Dr. Tan speaks directly to Ahmad in English, using technical medical terminology. Ahmad nods, while Puan Fatimah looks confused.</p>
+                        
+                        <p><strong>Ahmad:</strong> (to Dr. Tan) "What are her chances of recovery? Is this operation absolutely necessary?"</p>
+                        
+                        <p><strong>Dr. Tan:</strong> "Without surgery, the prognosis is poor. With surgery, we can potentially remove all the cancer if it hasn't spread too far. There are risks, of course, as with any major surgery, but it's her best option."</p>
+                        
+                        <p>Dr. Aisha notices that Puan Fatimah is not being included in the conversation and that the discussion is happening in English, which Puan Fatimah doesn't speak fluently.</p>
+                        
+                        <p><strong>Puan Fatimah:</strong> (in Malay to her son) "Apa yang doktor cakap? Ada masalah serius ke?" (What is the doctor saying? Is there a serious problem?)</p>
+                        
+                        <p><strong>Ahmad:</strong> (in Malay to his mother) "Jangan risau, ibu. Ada masalah dengan hempedu, doktor akan buat pembedahan untuk betulkan." (Don't worry, mother. There's a problem with your gallbladder, the doctor will do surgery to fix it.)</p>
+                        
+                        <p>Ahmad deliberately avoids mentioning cancer to his mother, believing it would cause her unnecessary distress.</p>
+                        
+                        <p><strong>Dr. Tan:</strong> "I'll need you to sign the consent form for the surgery. We'd like to schedule it for next week."</p>
+                        
+                        <p>Dr. Tan hands the consent form to Ahmad, who begins to read it.</p>
+                    </div>
+                </div>
+                
+                <div class="decision-point">
+                    <h3>Decision Point: How should Dr. Aisha respond to this situation?</h3>
+                    
+                    <div class="decision-options">
+                        <div class="decision-option" data-next="scene2a">
+                            <h4>Option A: Intervene immediately</h4>
+                            <p>Intervene in the conversation, switch to speaking Malay, and ensure that information is being communicated directly to Puan Fatimah, including her diagnosis of cancer.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2b">
+                            <h4>Option B: Respect family dynamics</h4>
+                            <p>Respect the son's approach, recognizing that in many Malaysian families, children often manage healthcare decisions for elderly parents. Allow Ahmad to explain things to his mother in his own way.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2c">
+                            <h4>Option C: Seek a private conversation</h4>
+                            <p>Ask to speak with Dr. Tan privately to discuss concerns about the consent process before proceeding further with the patient and her son.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+            </div>
+
+            <div class="case-section" id="scene2a">
+                <h2>Scene 2A: Direct Intervention</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/clinic_waiting_room.svg" alt="Hospital Consultation Room">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p><strong>Dr. Aisha:</strong> (in Malay) "Puan Fatimah, saya rasa penting untuk puan faham keadaan kesihatan puan sendiri. Boleh saya terangkan dalam Bahasa Melayu?" (Madam Fatimah, I think it's important for you to understand your own health condition. May I explain in Malay?)</p>
+                        
+                        <p><strong>Puan Fatimah:</strong> (looking relieved) "Ya, terima kasih doktor." (Yes, thank you doctor.)</p>
+                        
+                        <p><strong>Ahmad:</strong> (interrupting, in English) "Dr. Aisha, I'd prefer to explain things to my mother myself. She gets very anxious about medical issues."</p>
+                        
+                        <p><strong>Dr. Aisha:</strong> (in English) "I understand your concern, Encik Ahmad, but for your mother to give informed consent, she needs to understand her diagnosis and the proposed treatment. It's her right as a patient."</p>
+                        
+                        <p><strong>Dr. Aisha:</strong> (turning to Puan Fatimah, in Malay) "Puan Fatimah, ujian menunjukkan puan ada kanser pundi hempedu. Kami cadangkan pembedahan untuk mengalihkan pundi hempedu dan mungkin tisu sekitarnya yang terlibat. Tanpa pembedahan, kanser boleh merebak." (Madam Fatimah, tests show you have gallbladder cancer. We recommend surgery to remove the gallbladder and possibly surrounding tissue that may be involved. Without surgery, the cancer may spread.)</p>
+                        
+                        <p>Puan Fatimah looks shocked and begins to cry. Ahmad appears upset with Dr. Aisha.</p>
+                        
+                        <p><strong>Ahmad:</strong> (angrily) "This is exactly what I was trying to avoid! Now you've upset her unnecessarily!"</p>
+                        
+                        <p><strong>Puan Fatimah:</strong> (through tears, in Malay) "Kanser? Saya ada kanser? Kenapa Ahmad tak beritahu saya?" (Cancer? I have cancer? Why didn't Ahmad tell me?)</p>
+<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

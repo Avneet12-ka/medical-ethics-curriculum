@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Operating Room Scene -->
+  
+  <!-- Background Wall -->
+  <rect x="0" y="0" width="600" height="400" fill="#e6f7ff" />
+  
+  <!-- Floor -->
+  <rect x="0" y="300" width="600" height="100" fill="#d9d9d9" />
+  
+  <!-- Operating Table -->
+  <rect x="200" y="200" width="200" height="100" fill="#ffffff" stroke="#2b2b2b" stroke-width="3" />
+  <rect x="210" y="300" width="20" height="20" fill="#2b2b2b" /> <!-- Table leg 1 -->
+  <rect x="370" y="300" width="20" height="20" fill="#2b2b2b" /> <!-- Table leg 2 -->
+  <rect x="220" y="190" width="160" height="10" fill="#4d4d4d" /> <!-- Table controls -->
+  
+  <!-- Surgical Lights -->
+  <circle cx="300" cy="80" r="40" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="2" />
+  <circle cx="300" cy="80" r="30" fill="#ffffff" stroke="#2b2b2b" stroke-width="1" />
+  <line x1="300" y1="40" x2="300" y2="20" stroke="#2b2b2b" stroke-width="3" />
+  
+  <!-- Medical Equipment -->
+  <rect x="100" y="150" width="80" height="150" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="2" /> <!-- Monitor stand -->
+  <rect x="90" y="80" width="100" height="70" fill="#2b2b2b" stroke="#000000" stroke-width="2" /> <!-- Monitor -->
+  <rect x="95" y="85" width="90" height="60" fill="#a8e6ff" /> <!-- Monitor screen -->
+  <path d="M140 115 L 130 125 L 150 125 Z" fill="#4a90e2" /> <!-- ECG line -->
+  <path d="M150 125 L 160 105 L 170 125" fill="none" stroke="#4a90e2" stroke-width="2" /> <!-- ECG line -->
+  
+  <!-- Anesthesia Machine -->
+  <rect x="420" y="150" width="100" height="150" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="2" />
+  <rect x="430" y="160" width="80" height="40" fill="#2b2b2b" /> <!-- Display -->
+  <rect x="435" y="165" width="70" height="30" fill="#a8e6ff" /> <!-- Screen -->
+  <circle cx="450" cy="220" r="10" fill="#4a90e2" stroke="#2b2b2b" stroke-width="1" /> <!-- Knob 1 -->
+  <circle cx="490" cy="220" r="10" fill="#4a90e2" stroke="#2b2b2b" stroke-width="1" /> <!-- Knob 2 -->
+  <rect x="440" y="240" width="60" height="50" fill="#d9d9d9" stroke="#2b2b2b" stroke-width="1" /> <!-- Lower panel -->
+  
+  <!-- Surgical Instruments Table -->
+  <rect x="50" y="220" width="100" height="80" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="2" />
+  <line x1="60" y1="230" x2="80" y2="230" stroke="#2b2b2b" stroke-width="1" /> <!-- Instrument 1 -->
+  <line x1="90" y1="230" x2="110" y2="230" stroke="#2b2b2b" stroke-width="1" /> <!-- Instrument 2 -->
+  <line x1="120" y1="230" x2="140" y2="230" stroke="#2b2b2b" stroke-width="1" /> <!-- Instrument 3 -->
+  <rect x="70" y="240" width="60" height="5" fill="#2b2b2b" /> <!-- Instrument 4 -->
+  <circle cx="100" cy="260" r="10" fill="#f2f2f2" stroke="#2b2b2b" stroke-width="1" /> <!-- Bowl -->
+  
+  <!-- Door -->
+  <rect x="520" y="200" width="80" height="180" fill="#ffffff" stroke="#2b2b2b" stroke-width="3" />
+  <circle cx="540" cy="290" r="5" fill="#4a90e2" /> <!-- Doorknob -->
+  
+  <!-- Ceiling Tiles -->
+  <line x1="0" y1="0" x2="600" y2="0" stroke="#cccccc" stroke-width="1" />
+  <line x1="0" y1="50" x2="600" y2="50" stroke="#cccccc" stroke-width="1" />
+  <line x1="0" y1="100" x2="600" y2="100" stroke="#cccccc" stroke-width="1" />
+  <line x1="0" y1="150" x2="600" y2="150" stroke="#cccccc" stroke-width="1" />
+  <line x1="100" y1="0" x2="100" y2="150" stroke="#cccccc" stroke-width="1" />
+  <line x1="200" y1="0" x2="200" y2="150" stroke="#cccccc" stroke-width="1" />
+  <line x1="300" y1="0" x2="300" y2="150" stroke="#cccccc" stroke-width="1" />
+  <line x1="400" y1="0" x2="400" y2="150" stroke="#cccccc" stroke-width="1" />
+  <line x1="500" y1="0" x2="500" y2="150" stroke="#cccccc" stroke-width="1" />
+</svg>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Bioethics Practice in Malaysian Healthcare - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/interactive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Study 5: Bioethics Practice in Malaysian Healthcare</h1>
+            <p>Interactive exploration of bioethical challenges in Malaysian healthcare settings</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="case-study-container">
+            <div class="case-navigation">
+                <a href="../case-studies.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Case Studies</a>
+                <div class="progress-indicator">
+                    <span class="progress-text">Progress: <span id="progressPercentage">0%</span></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-section active" id="introduction">
+                <h2>Introduction</h2>
+                <p>This case study explores bioethical challenges in Malaysian healthcare settings, focusing on end-of-life care, resource allocation, and ethical committees. You will navigate through scenarios that present complex ethical dilemmas requiring careful consideration of Malaysian cultural, religious, and legal contexts.</p>
+                
+                <div class="learning-objectives">
+                    <h3>Learning Objectives</h3>
+                    <ul>
+                        <li>Understand the role of bioethics committees in Malaysian hospitals</li>
+                        <li>Apply ethical frameworks to end-of-life care decisions</li>
+                        <li>Analyze resource allocation challenges in Malaysian healthcare</li>
+                        <li>Develop strategies for ethical consultation in complex cases</li>
+                    </ul>
+                </div>
+                
+                <div class="case-navigation-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('introduction').classList.remove('active'); document.getElementById('scenario').classList.add('active'); updateComicProgress();">Begin Case Study <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="case-section" id="scenario">
+                <h2>Scenario: Hospital Kuala Lumpur Ethics Committee</h2>
+                
+                <div class="comic-container">
+                    <div class="comic-panel active" id="panel1">
+                        <div class="comic-scene">
+                            <div class="narrator-text">
+                                Dr. Mei Lin, a senior physician at Hospital Kuala Lumpur, has been appointed to the hospital's ethics committee. Today, the committee is meeting to discuss a complex case.
+                            </div>
+                        </div>
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    Welcome to the ethics committee, Dr. Lin. Today we're discussing a challenging case involving end-of-life care for a patient with multiple cultural considerations.
+                                </div>
+                            </div>
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-doctor"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    Thank you, Dr. Ahmad. I'm looking forward to contributing to the committee's work.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-navigation">
+                            <button class="btn btn-secondary prev-panel-btn" disabled>Previous</button>
+                            <button class="btn btn-primary next-panel-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <div class="comic-panel" id="panel2">
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    The patient is Mr. Tan, a 78-year-old Chinese Malaysian with advanced lung cancer. He's currently on life support with minimal brain activity. His family is divided on whether to continue treatment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-nurse"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    His eldest son wants to continue all treatments, citing filial piety and traditional beliefs. His daughter, who is the patient's designated healthcare proxy, believes her father wouldn't want to be kept alive artificially.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-navigation">
+                            <button class="btn btn-secondary prev-panel-btn">Previous</button>
+                            <button class="btn btn-primary next-panel-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <div class="comic-panel" id="panel3">
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-doctor"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    Did Mr. Tan leave any advance directives or express his wishes before becoming incapacitated?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    No formal advance directive, but his daughter claims he verbally expressed not wanting to be kept alive by machines. The son disputes this claim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-navigation">
+                            <button class="btn btn-secondary prev-panel-btn">Previous</button>
+                            <button class="btn btn-primary next-panel-btn">Next</button>
+                        </div>
+                    </div>
+                    
+                    <div class="comic-panel" id="panel4">
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    There's also a resource allocation issue. Mr. Tan has been in the ICU for three weeks, and we have other patients waiting for critical care beds.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comic-scene">
+                            <div class="character">
+                                <div class="character-avatar">
+                                    <i class="fas fa-user-doctor"></i>
+                                </div>
+                                <div class="speech-bubble">
+                                    This is a complex situation that involves balancing family dynamics, cultural values, patient autonomy, and resource allocation. What ethical frameworks should we apply here?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-navigation">
+                            <button class="btn btn-secondary prev-panel-btn">Previous</button>
+                            <button class="btn btn-primary next-panel-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="decision-point">
+                    <h3 class="decision-question">As a member of the ethics committee, what approach would you recommend?</h3>
+                    <form>
+                        <div class="decision-options">
+                            <div class="decision-option">
+                                <input type="radio" id="option1" name="decision1" value="option1" data-correct="false">
+                                <label for="option1">Defer to the eldest son's wishes out of respect for traditional family hierarchy</label>
+                            </div>
+                            <div class="decision-option">
+                                <input type="radio" id="option2" name="decision1" value="option2" data-correct="false">
+                                <label for="option2">Prioritize resource allocation and recommend withdrawal of life support</label>
+                            </div>
+                            <div class="decision-option">
+                                <input type="radio" id="option3" name="decision1" value="option3" data-correct="true">
+                                <label for="option3">Facilitate a family meeting with cultural mediation to reach consensus while considering the patient's best interests</label>
+                            </div>
+                            <div class="decision-option">
+                                <input type="radio" id="option4" name="decision1" value="option4" data-correct="false">
+                                <label for="option4">Defer to the daughter as the designated healthcare proxy without further discussion</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary submit-decision">Submit Decision</button>
+                    </form>
+                    
+                    <div class="feedback">
+                        <h4 class="feedback-title">Feedback</h4>
+                        <div class="feedback-content">
+                            <p>Facilitating a family meeting with cultural mediation is the most ethical approach in this situation. This respects Malaysian cultural values that emphasize family consensus while still considering the patient's best interests.</p>
+                            <p>In Malaysian healthcare ethics, balancing family involvement with patient autonomy is essential, especially in end-of-life decisions. The ethics committee should help mediate between different family perspectives while providing guidance based on ethical principles.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary next-decision-btn" disabled>Continue to Next Scenario</button>
+                </div>
+                
+                <div class="case-navigation-buttons">
+                    <button class="btn btn-secondary" onclick="document.getElementById('scenario').classList.remove('active'); document.getElementById('introduction').classList.add('active');">Back to Introduction</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('scenario').classList.remove('active'); document.getElementById('quiz-section').classList.add('active');">Continue to Quiz</button>
+                </div>
+            </div>
+
+            <div class="case-section" id="quiz-section">
+                <h2>Knowledge Check</h2>
+                <p>Test your understanding of bioethics practice in Malaysian healthcare with the following questions.</p>
+                
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <h3>Bioethics Practice Quiz</h3>
+                        <div class="quiz-progress">
+                            <span class="quiz-progress-text">Question <span id="current-question">1</span> of <span id="total-questions">5</span></span>
+                            <div class="quiz-progress-bar">
+                                <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="quiz-form">
+                        <div class="question mcq-question" id="question1">
+                            <h4 class="question-text">1. Which of the following best describes the role of a hospital ethics committee in Malaysian healthcare?</h4>
+                            <div class="options">
+                                <div class="option">
+                                    <input type="radio" id="q1a" name="q1" value="a" data-correct="false">
+                                    <label for="q1a">To make all end-of-life decisions independently of healthcare providers</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q1b" name="q1" value="b" data-correct="true">
+                                    <label for="q1b">To provide consultation, education, and policy guidance on ethical issues</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q1c" name="q1" value="c" data-correct="false">
+                                    <label for="q1c">To enforce religious guidelines in all medical decisions</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q1d" name="q1" value="d" data-correct="false">
+                                    <label for="q1d">To override family decisions when resource allocation is a concern</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question mcq-question" id="question2">
+                            <h4 class="question-text">2. In Malaysian healthcare, how should cultural and religious values be considered in bioethical decisions?</h4>
+                            <div class="options">
+                                <div class="option">
+                                    <input type="radio" id="q2a" name="q2" value="a" data-correct="false">
+                                    <label for="q2a">They should be ignored in favor of universal ethical principles</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q2b" name="q2" value="b" data-correct="false">
+                                    <label for="q2b">They should always override medical considerations</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q2c" name="q2" value="c" data-correct="true">
+                                    <label for="q2c">They should be respected and integrated into ethical decision-making while balancing other considerations</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q2d" name="q2" value="d" data-correct="false">
+                                    <label for="q2d">They should only be considered for patients of specific ethnic backgrounds</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question mcq-question" id="question3">
+                            <h4 class="question-text">3. Which ethical principle is most relevant when considering resource allocation in Malaysian healthcare?</h4>
+                            <div class="options">
+                                <div class="option">
+                                    <input type="radio" id="q3a" name="q3" value="a" data-correct="false">
+                                    <label for="q3a">Autonomy</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q3b" name="q3" value="b" data-correct="false">
+                                    <label for="q3b">Beneficence</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q3c" name="q3" value="c" data-correct="false">
+                                    <label for="q3c">Non-maleficence</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="q3d" name="q3" value="d" data-correct="true">
+                                    <label for="q3d">Justice</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question open-question" id="question4">
+                            <h4 class="question-text">4. Describe how you would approach a situation where a patient's family disagrees with the medical team's recommendation for palliative care instead of continued aggressive treatment.</h4>
+                            <textarea name="q4" rows="5" placeholder="Enter your answer here..."></textarea>
+                        </div>
+                        
+                        <div class="question open-question" id="question5">
+                            <h4 class="question-text">5. Explain how resource allocation decisions in Malaysian healthcare can be made ethically while considering the multicultural context of the country.</h4>
+                            <textarea name="q5" rows="5" placeholder="Enter your answer here..."></textarea>
+                        </div>
+                        
+                        <div class="quiz-navigation">
+                            <button type="button" class="btn btn-secondary" id="prev-question-btn" disabled>Previous Question</button>
+                            <button type="button" class="btn btn-primary" id="next-question-btn">Next Question</button>
+                            <button type="submit" class="btn btn-primary" id="submit-quiz-btn" style="display: none;">Submit Quiz</button>
+                        </div>
+                    </form>
+                    
+                    <div id="quiz-score"></div>
+                </div>
+                
+                <div class="case-navigation-buttons">
+                    <button class="btn btn-secondary" onclick="document.getElementById('quiz-section').classList.remove('active'); document.getElementById('scenario').classList.add('active');">Back to Scenario</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('quiz-section').classList.remove('active'); document.getElementById('discussion').classList.add('active');">Continue to Discussion</button>
+                </div>
+            </div>
+
+            <div class="case-section" id="discussion">
+                <h2>Post-Case Discussion</h2>
+                <p>Reflect on the bioethical challenges presented in this case study and consider how they apply to your own practice.</p>
+                
+                <div class="discussion-section" id="discussion-section">
+                    <div class="discussion-question">
+                        <h3>1. Ethical Committees in Malaysian Hospitals</h3>
+                        <p>How can hospital ethics committees in Malaysia better integrate diverse cultural and religious perspectives while maintaining ethical standards?</p>
+                        <textarea class="discussion-textarea" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="discussion-question">
+                        <h3>2. End-of-Life Care</h3>
+                        <p>What strategies can healthcare providers use to navigate family disagreements about end-of-life care while respecting Malaysian cultural values?</p>
+                        <textarea class="discussion-textarea" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                    
+                    <div class="discussion-question">
+                        <h3>3. Resource Allocation</h3>
+                        <p>How should limited healthcare resources be allocated in Malaysian hospitals when demand exceeds supply? What ethical frameworks should guide these decisions?</p>
+                        <textarea class="discussion-textarea" placeholder="Enter your reflection here..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="case-navigation-buttons">
+                    <button class="btn btn-secondary" onclick="document.getElementById('discussion').classList.remove('active'); document.getElementById('quiz-section').classList.add('active');">Back to Quiz</button>
+                    <a href="../case-studies.html" class="btn btn-primary">Return to Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Malaysian Medical Ethics Curriculum</h3>
+                    <p>A comprehensive educational resource for professional, ethical, and legal issues in Malaysian medical practice.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../lectures.html">Lectures</a></li>
+                        <li><a href="../case-studies.html">Case Studies</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Malaysian Medical Ethics Curriculum. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/case-study.js"></script>
+</body>
+</html>

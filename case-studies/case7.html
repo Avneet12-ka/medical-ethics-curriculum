@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Evidence-based Medicine and Professional Decision Making - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Study 7: Evidence-based Medicine and Professional Decision Making</h1>
+            <p>Interactive exploration of evidence-based practice and ethical decision making in Malaysian healthcare</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="case-study-container">
+            <div class="case-navigation">
+                <a href="../case-studies.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Case Studies</a>
+                <div class="progress-indicator">
+                    <span class="progress-text">Progress: <span id="progressPercentage">0%</span></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-section active" id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to this interactive case study on resource allocation ethics within the Malaysian healthcare context. This case will explore the complex ethical issues that arise when healthcare resources are limited and difficult decisions must be made about their distribution.</p>
+                
+                <p>As you work through this case, you'll be asked to make decisions at critical points, and your choices will influence how the scenario unfolds. The case will challenge you to apply ethical principles while considering Malaysian healthcare realities, including the dual public-private system and socioeconomic factors.</p>
+                
+                <h3>Learning Objectives</h3>
+                <p>By completing this case study, you will be able to:</p>
+                <ul>
+                    <li>Identify key ethical issues in healthcare resource allocation in Malaysia</li>
+                    <li>Apply ethical frameworks to resource allocation decisions</li>
+                    <li>Navigate tensions between individual patient needs and population health</li>
+                    <li>Consider justice and equity in the Malaysian dual healthcare system</li>
+                    <li>Develop strategies for ethically sound resource allocation in resource-constrained settings</li>
+                </ul>
+                
+                <div class="pre-knowledge">
+                    <h3>Pre-Knowledge Check</h3>
+                    <p>Before beginning this case, it's helpful to have a basic understanding of:</p>
+                    <ul>
+                        <li>Fundamental ethical principles (autonomy, beneficence, non-maleficence, justice)</li>
+                        <li>Basic structure of the Malaysian healthcare system (public and private sectors)</li>
+                        <li>Concepts of distributive justice and healthcare equity</li>
+                        <li>Common approaches to healthcare resource allocation</li>
+                    </ul>
+                    <p>If you need to review these concepts, please refer to Lecture 7: Healthcare Economics and Ethics in this curriculum.</p>
+                </div>
+                
+                <button class="btn btn-primary next-section">Begin Case Study</button>
+            </div>
+
+            <div class="case-section" id="character-intro">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/administrator.svg" alt="Dr. Rahman">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Rahman bin Abdullah</h3>
+                        <p><strong>Role:</strong> Hospital Director at General Hospital Kuala Lumpur</p>
+                        <p><strong>Background:</strong> Dr. Rahman has been the hospital director for 5 years. He has a background in public health and hospital administration. He is responsible for overseeing the hospital's operations, including resource allocation decisions. He strives to balance quality patient care with budget constraints.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/doctor_male.svg" alt="Dr. Chong">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Chong Wei Liang</h3>
+                        <p><strong>Role:</strong> Head of Nephrology Department</p>
+                        <p><strong>Background:</strong> Dr. Chong is an experienced nephrologist who advocates strongly for his patients. He is frustrated by the limited dialysis resources and long waiting lists. He believes that more resources should be allocated to expanding dialysis services given the high prevalence of kidney disease in Malaysia.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/doctor_female.svg" alt="Dr. Lakshmi">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Lakshmi Devi</h3>
+                        <p><strong>Role:</strong> Head of Oncology Department</p>
+                        <p><strong>Background:</strong> Dr. Lakshmi leads the oncology department, which is facing increasing demand for cancer treatments. She is concerned about the limited budget for expensive cancer medications and believes that more resources should be directed toward cancer care, especially for treatments with proven efficacy.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/young_patient.svg" alt="Encik Ismail">
+                    </div>
+                    <div class="character-info">
+                        <h3>Encik Ismail bin Hassan</h3>
+                        <p><strong>Role:</strong> Patient, 45-year-old teacher with end-stage renal disease</p>
+                        <p><strong>Background:</strong> Encik Ismail has been on the waiting list for dialysis at the public hospital for several months. He is the primary breadwinner for his family with three school-age children. His condition is deteriorating, and he cannot afford private dialysis treatment.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/patient_elderly.svg" alt="Puan Siti">
+                    </div>
+                    <div class="character-info">
+                        <h3>Puan Siti binti Ahmad</h3>
+                        <p><strong>Role:</strong> Patient, 68-year-old retired civil servant with advanced breast cancer</p>
+                        <p><strong>Background:</strong> Puan Siti has metastatic breast cancer that has progressed despite standard treatments. Her oncologist has recommended a new targeted therapy that is expensive and not currently covered by the hospital's formulary. The treatment could potentially extend her life by several months with improved quality of life.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/nurse.svg" alt="Sister Maria">
+                    </div>
+                    <div class="character-info">
+                        <h3>Sister Maria Chin</h3>
+                        <p><strong>Role:</strong> Chief Nursing Officer</p>
+                        <p><strong>Background:</strong> Sister Maria has worked at the hospital for 25 years and has a deep understanding of patient needs across departments. She often advocates for preventive care and community health initiatives, believing they provide better value in the long term than expensive interventions for advanced disease.</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+                <button class="btn btn-primary next-section">Continue to Scenario</button>
+            </div>
+
+            <div class="case-section" id="scene1">
+                <h2>Scene 1: The Budget Committee Meeting</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/conference_room.svg" alt="Hospital Conference Room">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p>Dr. Rahman has called a meeting of the hospital's budget committee to discuss resource allocation for the coming fiscal year. The hospital has received its annual budget from the Ministry of Health, but the funds are insufficient to meet all departments' requests. Difficult decisions must be made about priorities.</p>
+                        
+                        <p><strong>Dr. Rahman:</strong> "Thank you all for coming today. As you know, we've received our budget allocation for the next fiscal year. Unfortunately, it's a 5% increase from last year, which doesn't keep pace with inflation or our growing patient population. We need to make some difficult decisions about how to allocate these limited resources."</p>
+                        
+                        <p><strong>Dr. Rahman:</strong> "We have two major funding requests on the table today. Dr. Chong has requested funds to add ten new dialysis machines and staff to operate them, which would reduce our waiting list for dialysis. Dr. Lakshmi has requested budget approval to add three new expensive cancer medications to our formulary, which could benefit patients with advanced cancers who have failed standard treatments."</p>
+                        
+                        <p><strong>Dr. Chong:</strong> "I want to emphasize the critical nature of our dialysis shortage. We currently have over 100 patients on the waiting list, and some have been waiting for more than a year. Many are deteriorating while they wait, and some have died before receiving treatment. These are patients who could live many more years with proper dialysis."</p>
+                        
+                        <p><strong>Dr. Lakshmi:</strong> "While I understand the dialysis situation is difficult, cancer patients also face life-threatening conditions. These new medications have shown significant benefits in clinical trials, extending life by 6-18 months with improved quality of life. Currently, patients who could benefit from these treatments either go without or must pay out-of-pocket at private facilities, which most cannot afford."</p>
+                        
+                        <p><strong>Sister Maria:</strong> "I'd like to add another perspective. Both these requests focus on treating advanced disease. Should we also consider allocating more resources to preventive care? For instance, better diabetes management could reduce the number of patients needing dialysis in the future."</p>
+                        
+                        <p><strong>Dr. Rahman:</strong> "These are all valid points. Unfortunately, our budget constraints mean we cannot fully fund both major requests, and any funds directed to preventive programs would further limit what's available for these immediate needs. We need to make a decision based on ethical principles and the greatest benefit for our patient population."</p>
+                    </div>
+                </div>
+                
+                <div class="decision-point">
+                    <h3>Decision Point: How should the committee approach this resource allocation decision?</h3>
+                    
+                    <div class="decision-options">
+                        <div class="decision-option" data-next="scene2a">
+                            <h4>Option A: Prioritize dialysis expansion</h4>
+                            <p>Allocate the majority of available funds to expanding dialysis capacity, based on the large waiting list, proven effectiveness of dialysis, and potential for many years of extended life for these patients.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2b">
+                            <h4>Option B: Prioritize cancer medications</h4>
+                            <p>Allocate the majority of available funds to adding the new cancer medications to the formulary, based on the significant benefit they could provide to patients with advanced cancer who currently have few options.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2c">
+                            <h4>Option C: Seek a balanced approach</h4>
+                            <p>Attempt to partially fund both requests while also allocating some resources to preventive care, recognizing that this means neither immediate need will be fully addressed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+            </div>
+
+            <div class="case-section" id="scene2a">
+                <h2>Scene 2A: Prioritizing Dialysis Expansion</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/conference_room.svg" alt="Budget Committee Meeting Continues">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p><strong>Dr. Rahman:</strong> "After considering all perspectives, I believe we should prioritize expanding our dialysis capacity. The waiting list is substantial, and dialysis is a life-sustaining treatment with proven effectiveness. Many of these patients could live for many more years with proper treatment."</p>
+                        
+                        <p><strong>Dr. Chong:</strong> "Thank you. This decision will literally save lives. Some of our patients have been waiting far too long, and their conditions are deteriorating while they wait."</p>
+                    <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

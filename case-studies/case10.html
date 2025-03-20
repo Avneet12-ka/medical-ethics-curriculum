@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 10: Research Ethics Application - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>Case Study 10: Research Ethics Application</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="navigation">
+                <button id="prev-btn" disabled>Previous</button>
+                <span id="current-section">Introduction</span>
+                <button id="next-btn">Next</button>
+            </div>
+        </header>
+
+        <main id="content-area">
+            <!-- Introduction Section -->
+            <section id="introduction" class="active">
+                <h2>Introduction</h2>
+                <p>Welcome to Case Study 10: Research Ethics Application. In this interactive case study, you will explore ethical challenges in medical research, particularly focusing on research involving vulnerable populations in Malaysia.</p>
+                <p>You will follow Dr. Aisha Binti Rahman, a neurologist conducting research on early Alzheimer's disease, as she navigates the complex ethical landscape of research ethics committee approval, informed consent, protocol adherence, and publication ethics.</p>
+                <p>Throughout this case study, you will be presented with ethical dilemmas and asked to make decisions. Your choices will help you understand the practical application of research ethics principles in the Malaysian context.</p>
+                <div class="action-buttons">
+                    <button id="start-case-btn" class="primary-btn" onclick="navigateToSection('characters')">Begin Case Study</button>
+                    <button id="view-preknowledge-btn" class="secondary-btn" onclick="navigateToSection('pre-knowledge')">Review Pre-Knowledge Materials</button>
+                </div>
+            </section>
+
+            <!-- Pre-Knowledge Materials Section -->
+            <section id="pre-knowledge">
+                <h2>Key Concepts in Research Ethics</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Fundamental Ethical Principles</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Respect for Persons:</strong> Recognizing autonomy and protecting those with diminished autonomy</li>
+                                <li><strong>Beneficence:</strong> Maximizing benefits and minimizing harms</li>
+                                <li><strong>Justice:</strong> Fair distribution of research benefits and burdens</li>
+                                <li><strong>Non-maleficence:</strong> Avoiding harm to research participants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Informed Consent Process</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Elements of valid consent:</strong> disclosure, understanding, voluntariness, capacity</li>
+                                <li><strong>Special considerations for vulnerable populations</strong></li>
+                                <li><strong>Ongoing consent and the right to withdraw</strong></li>
+                                <li><strong>Documentation requirements</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Research Ethics Committee Structure and Function</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Composition and expertise requirements</strong></li>
+                                <li><strong>Review procedures and decision-making</strong></li>
+                                <li><strong>Continuing review and monitoring</strong></li>
+                                <li><strong>Reporting requirements</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Protocol Adherence and Deviations</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Types of protocol deviations</strong></li>
+                                <li><strong>Reporting requirements</strong></li>
+                                <li><strong>Corrective and preventive actions</strong></li>
+                                <li><strong>Impact on data integrity</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Incidental Findings Management</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Categories of incidental findings</strong></li>
+                                <li><strong>Disclosure obligations</strong></li>
+                                <li><strong>Participant preferences</strong></li>
+                                <li><strong>Follow-up procedures</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Publication Ethics</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Complete and transparent reporting</strong></li>
+                                <li><strong>Authorship criteria</strong></li>
+                                <li><strong>Conflicts of interest</strong></li>
+                                <li><strong>Data sharing responsibilities</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Community Engagement in Research</div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Benefits of community involvement</strong></li>
+                                <li><strong>Methods for meaningful engagement</strong></li>
+                                <li><strong>Addressing diversity and inclusion</strong></li>
+                                <li><strong>Returning results to communities</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="back-to-intro-btn" class="secondary-btn" onclick="navigateToSection('introduction')">Back to Introduction</button>
+                    <button id="start-from-preknowledge-btn" class="primary-btn" onclick="navigateToSection('characters')">Begin Case Study</button>
+                </div>
+            </section>
+
+            <!-- Character Introduction Section -->
+            <section id="characters">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-grid">
+                    <div class="character-card">
+                        <div class="character-image" id="dr-aisha-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Dr. Aisha</div>
+                        </div>
+                        <h3>Dr. Aisha Binti Rahman</h3>
+                        <p>Female Malay researcher, mid-30s</p>
+                        <p>Neurology Assistant Professor at University Malaya Medical Centre</p>
+                        <p>Ambitious, passionate about research, sometimes overly optimistic</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="prof-tan-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Prof. Tan</div>
+                        </div>
+                        <h3>Professor Tan Wei Ming</h3>
+                        <p>Male Chinese-Malaysian senior researcher, late 50s</p>
+                        <p>Research Ethics Committee Chair, Professor of Bioethics</p>
+                        <p>Meticulous, principled, experienced mentor</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="dr-raj-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Dr. Raj</div>
+                        </div>
+                        <h3>Dr. Raj Sharma</h3>
+                        <p>Male Indian-Malaysian researcher, early 40s</p>
+                        <p>Clinical Trials Coordinator, Associate Professor</p>
+                        <p>Detail-oriented, pragmatic, good mediator</p>
+                    </div>
+                    
+                    <div class="character-card">
+                        <div class="character-image" id="puan-mei-ling-image">
+                            <!-- Character image placeholder -->
+                            <div class="placeholder-image">Puan Mei Ling</div>
+                        </div>
+                        <h3>Puan Mei Ling</h3>
+                        <p>Female Chinese-Malaysian, mid-60s</p>
+                        <p>Potential research participant, retired teacher with early Alzheimer's</p>
+                        <p>Intelligent, occasionally confused, concerned about her condition</p>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="continue-to-scene1-btn" class="primary-btn" onclick="navigateToSection('scene1')">Continue to Scene 1</button>
+                </div>
+            </section>
+
+            <!-- Scene 1 Section -->
+            <section id="scene1">
+                <h2>Scene 1: The Research Proposal</h2>
+                
+                <div class="scene-container">
+                    <div class="scene-image" id="scene1-image">
+                        <!-- Scene image placeholder -->
+                        <div class="placeholder-image">Neuroscience Research Laboratory</div>
+                    </div>
+                    
+                    <div class="scene-dialog">
+                        <p class="scene-caption">Neuroscience Research Laboratory, University Malaya Medical Centre</p>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Aisha:</p>
+                            <p class="character-speech">"This new treatment approach could significantly slow cognitive decline in early Alzheimer's patients. I'm confident our research will make a breakthrough."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Aisha:</p>
+                            <p class="character-speech">"The preliminary data from our animal studies is promising. I believe we're ready to move to human trials."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Raj:</p>
+                            <p class="character-speech">"The data does look promising, but human trials will require rigorous ethical review. Have you considered all the ethical implications?"</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Aisha:</p>
+                            <p class="character-speech">"Of course. The benefits far outweigh the risks. This could help thousands of patients if successful."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Raj:</p>
+                            <p class="character-speech">"I'm particularly concerned about your inclusion criteria. You're targeting patients with early Alzheimer's who may have fluctuating capacity to consent."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Aisha:</p>
+                            <p class="character-speech">"We'll implement a thorough consent process. This population desperately needs new treatment options."</p>
+                        </div>
+                        
+                        <div class="dialog">
+                            <p class="character-name">Dr. Raj:</p>
+                            <p class="character-speech">"I agree about the need, but we must ensure our process protects vulnerable participants. Let's review the consent procedure together."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="decision-point">
+                        <h3>DECISION POINT</h3>
+                        <p>As Dr. Aisha, what is the most appropriate approach to take regarding research with potentially vulnerable participants?</p>
+                        
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="scene1-decision" id="scene1-option-a" value="A" data-correct="false">
+                                <label for="scene1-option-a">A) Proceed with the current protocol since the research benefits outweigh the risks</label>
+                            </div>
+                            
+                            <div class="option">
+                                <input type="radio" name="scene1-decision" id="scene1-option-b" value="B" data-correct="false">
+                                <label for="scene1-option-b">B) Exclude all participants with any cognitive impairment to avoid ethi<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

@@ -1,0 +1,339 @@
+/* Interactive elements styles for Malaysian Medical Ethics Curriculum */
+
+/* Comic Panel Styles */
+.comic-container {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.comic-panel {
+    display: none;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comic-panel.active {
+    display: block;
+}
+
+.comic-scene {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.character {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.character-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: var(--light-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--light-color);
+}
+
+.narrator-text {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.panel-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+/* Decision Point Styles */
+.decision-point {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.decision-question {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.decision-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.decision-option {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.decision-option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.decision-option input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.decision-option label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.feedback {
+    display: none;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.feedback.correct {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-left: 4px solid var(--success-color);
+}
+
+.feedback.incorrect {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-left: 4px solid var(--error-color);
+}
+
+.feedback-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.feedback.correct .feedback-title {
+    color: var(--success-color);
+}
+
+.feedback.incorrect .feedback-title {
+    color: var(--error-color);
+}
+
+/* Quiz Styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.quiz-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.quiz-progress {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-progress-text {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.quiz-progress-bar {
+    flex: 1;
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quiz-progress-fill {
+    height: 100%;
+    background-color: var(--secondary-color);
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.question {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.question-text {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.option input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.option label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.open-question textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.quiz-score {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 8px;
+}
+
+.score-container h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.score-feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.excellent-score {
+    color: var(--success-color);
+}
+
+.good-score {
+    color: var(--secondary-color);
+}
+
+.review-needed {
+    color: var(--warning-color);
+}
+
+/* Discussion Section Styles */
+.discussion-section {
+    display: none;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+
+.discussion-question {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.discussion-question h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.discussion-textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .comic-scene {
+        flex-direction: column;
+    }
+    
+    .character {
+        min-width: 100%;
+    }
+    
+    .speech-bubble {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Ethical Dilemmas in Genetic Counselling - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Study 6: Ethical Dilemmas in Genetic Counselling</h1>
+            <p>Interactive exploration of genetic counseling ethics and cultural considerations in Malaysian healthcare</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="case-study-container">
+            <div class="case-navigation">
+                <a href="../case-studies.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Case Studies</a>
+                <div class="progress-indicator">
+                    <span class="progress-text">Progress: <span id="progressPercentage">0%</span></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-section active" id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to this interactive case study on end-of-life decision making within the Malaysian healthcare context. This case will explore the complex ethical issues that arise when caring for patients with terminal illness, particularly focusing on cultural and religious considerations, family dynamics, and palliative care approaches.</p>
+                
+                <p>As you work through this case, you'll be asked to make decisions at critical points, and your choices will influence how the scenario unfolds. The case will challenge you to apply ethical principles while considering Malaysian cultural contexts and healthcare realities.</p>
+                
+                <h3>Learning Objectives</h3>
+                <p>By completing this case study, you will be able to:</p>
+                <ul>
+                    <li>Identify key ethical issues in end-of-life care within Malaysian cultural contexts</li>
+                    <li>Apply ethical principles to complex palliative care scenarios</li>
+                    <li>Navigate family dynamics and cultural expectations in end-of-life decision making</li>
+                    <li>Balance patient autonomy with family-centered care approaches</li>
+                    <li>Develop strategies for culturally sensitive communication about death and dying</li>
+                </ul>
+                
+                <div class="pre-knowledge">
+                    <h3>Pre-Knowledge Check</h3>
+                    <p>Before beginning this case, it's helpful to have a basic understanding of:</p>
+                    <ul>
+                        <li>Fundamental ethical principles (autonomy, beneficence, non-maleficence, justice)</li>
+                        <li>Basics of palliative care approaches</li>
+                        <li>Malaysian cultural and religious perspectives on death and dying</li>
+                        <li>Legal framework for end-of-life care in Malaysia</li>
+                    </ul>
+                    <p>If you need to review these concepts, please refer to Lecture 5: End-of-Life Ethics in this curriculum.</p>
+                </div>
+                
+                <button class="btn btn-primary next-section">Begin Case Study</button>
+            </div>
+
+            <div class="case-section" id="character-intro">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/doctor_male.svg" alt="Dr. Amir">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Amir bin Hassan</h3>
+                        <p><strong>Role:</strong> Palliative Care Physician at General Hospital Kuala Lumpur</p>
+                        <p><strong>Background:</strong> Dr. Amir has been practicing palliative medicine for 12 years. He is known for his compassionate approach and cultural sensitivity. He strives to balance medical best practices with respect for diverse cultural and religious perspectives on end-of-life care.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/patient_elderly.svg" alt="Encik Tan">
+                    </div>
+                    <div class="character-info">
+                        <h3>Encik Tan Wei Ming</h3>
+                        <p><strong>Role:</strong> Patient, 68-year-old retired school principal</p>
+                        <p><strong>Background:</strong> Encik Tan has advanced lung cancer that has metastasized to his brain and bones. He has been admitted to the hospital with increasing pain, confusion, and respiratory distress. Before his recent cognitive decline, he expressed a desire for comfort care rather than aggressive interventions at the end of life.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_male.svg" alt="David Tan">
+                    </div>
+                    <div class="character-info">
+                        <h3>David Tan</h3>
+                        <p><strong>Role:</strong> Encik Tan's eldest son, 42-year-old businessman</p>
+                        <p><strong>Background:</strong> David lives in Singapore but has returned to Malaysia to be with his father. He is struggling with anticipatory grief and feels a strong sense of filial responsibility. He believes everything possible should be done to extend his father's life, regardless of quality of life considerations.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_female.svg" alt="Grace Tan">
+                    </div>
+                    <div class="character-info">
+                        <h3>Grace Tan</h3>
+                        <p><strong>Role:</strong> Encik Tan's daughter, 38-year-old nurse</p>
+                        <p><strong>Background:</strong> Grace works as a nurse in Kuala Lumpur and has been closely involved in her father's care. Her medical background gives her insight into her father's condition, and she is concerned about his suffering. She believes his previously expressed wishes for comfort care should be respected.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_female.svg" alt="Puan Tan">
+                    </div>
+                    <div class="character-info">
+                        <h3>Puan Tan Mei Ling</h3>
+                        <p><strong>Role:</strong> Encik Tan's wife, 65-year-old retired teacher</p>
+                        <p><strong>Background:</strong> Puan Tan has been married to Encik Tan for 45 years. She is deeply distressed by his suffering but torn between honoring his wishes and supporting her son's desire to try every possible treatment. She is influenced by traditional Chinese beliefs about family decision-making and end-of-life care.</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+                <button class="btn btn-primary next-section">Continue to Scenario</button>
+            </div>
+
+            <div class="case-section" id="scene1">
+                <h2>Scene 1: The Family Meeting</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/conference_room.svg" alt="Hospital Conference Room">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p>Dr. Amir has called a family meeting to discuss Encik Tan's care plan. Encik Tan's condition has deteriorated significantly in the past 48 hours, with increasing pain, respiratory distress, and periods of confusion. The family gathers in a small conference room near the palliative care unit.</p>
+                        
+                        <p><strong>Dr. Amir:</strong> "Thank you all for coming today. I wanted to discuss Encik Tan's current condition and our care plan moving forward. As you've seen, his condition has worsened significantly. The cancer has spread extensively, and he's experiencing increasing pain and breathing difficulties."</p>
+                        
+                        <p><strong>David:</strong> "What treatment options do we have, doctor? Surely there must be something more we can do. My father is a fighter—he wouldn't want us to give up."</p>
+                        
+                        <p><strong>Grace:</strong> "David, you haven't been here these past months. Dad made it clear to me and Mom that he didn't want extraordinary measures when the time came. He wanted to be comfortable, not hooked up to machines."</p>
+                        
+                        <p><strong>David:</strong> (visibly upset) "How can you say that? As if I don't care enough? I'm saying we should explore every option. That's what a good son does."</p>
+                        
+                        <p><strong>Puan Tan:</strong> (quietly) "Please don't argue. This is difficult for all of us." (Turning to Dr. Amir) "Doctor, what do you recommend? We want what's best for my husband."</p>
+                        
+                        <p><strong>Dr. Amir:</strong> "I understand this is an incredibly difficult time for your family. Before Encik Tan's cognitive decline, he did express to our team that he wanted comfort-focused care rather than aggressive interventions when his condition reached this stage. However, I recognize that family input is very important in making these decisions, especially in our cultural context."</p>
+                        
+                        <p><strong>David:</strong> "With all due respect, doctor, in Chinese tradition, it's the family's responsibility to ensure everything possible is done. It would be disrespectful to my father not to try every available treatment."</p>
+                        
+                        <p><strong>Grace:</strong> "But Dad specifically said he didn't want that. Shouldn't we respect his wishes?"</p>
+                        
+                        <p>Dr. Amir notices that Puan Tan is becoming increasingly distressed by the disagreement between her children. He needs to navigate this family conflict while determining the most appropriate care plan for Encik Tan.</p>
+                    </div>
+                </div>
+                
+                <div class="decision-point">
+                    <h3>Decision Point: How should Dr. Amir proceed with this family discussion?</h3>
+                    
+                    <div class="decision-options">
+                        <div class="decision-option" data-next="scene2a">
+                            <h4>Option A: Emphasize patient autonomy</h4>
+                            <p>Focus on Encik Tan's previously expressed wishes, explaining that respecting his autonomy means honoring the preferences he stated while he had decision-making capacity, while acknowledging the family's concerns.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2b">
+                            <h4>Option B: Facilitate family consensus</h4>
+                            <p>Acknowledge both perspectives and work toward a family consensus, recognizing that in Malaysian Chinese culture, family harmony and collective decision-making are highly valued, while gently guiding toward a plan that aligns with good palliative care.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2c">
+                            <h4>Option C: Provide more medical information</h4>
+                            <p>Offer more detailed information about Encik Tan's prognosis and the likely benefits and burdens of different treatment approaches, helping the family understand the medical realities while deferring the ultimate decision to them.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+            </div>
+
+            <div class="case-section" id="scene2a">
+                <h2>Scene 2A: Emphasizing Patient Autonomy</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/conference_room.svg" alt="Family Discussion Continues">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p><strong>Dr. Amir:</strong> "I understand the importance of family in making these decisions, especially in our cultural context. However, I feel I must advocate for Encik Tan's previously expressed wishes. When he was fully capable of making decisions, he clearly stated that he wanted comfort-focused care rather than aggressive interventions at this stage."</p>
+                        
+                        <p><strong>Dr. Amir:</strong> "Respecting his autonomy means honoring those preferences, even though it's difficult. This doesn't mean 'giving up' – it means focusing on his comfort and dignity in alignment with his own values."</p>
+                        
+                        <p><strong>David:</strong> (visibly upset) "With all due respect, doctor, you don't understand our family traditions. It's my duty as his son to ensure everything possible is done. How can I face our relatives, our community, if they think we didn't try everything?"</p>
+                        
+                        <p><strong>Grace:</strong> "David, this isn't about what others think. It's about what Dad wanted."</p>
+                        
+                        <p><strong>Puan Tan:</strong> (tearfully) "I don't know what to do. I want to respect my husband's wishes, but I also understand my son's feelings. In our tradition, the family decides together."</p>
+                        
+                        <p><strong>Dr. Amir:</strong> "I hear your concerns, <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Ethical Dilemmas in Genetic Testing - Malaysian Medical Ethics Curriculum</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Malaysian Medical Ethics</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../lectures.html">Lectures</a></li>
+                    <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Study 1: Ethical Dilemmas in Genetic Testing</h1>
+            <p>Interactive exploration of genetic counseling challenges in Malaysian healthcare</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="case-study-container">
+            <div class="case-navigation">
+                <a href="../case-studies.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Case Studies</a>
+                <div class="progress-indicator">
+                    <span class="progress-text">Progress: <span id="progressPercentage">0%</span></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-section active" id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to this interactive case study on ethical dilemmas in genetic testing within the Malaysian healthcare context. This case will explore the complex ethical issues that arise when genetic information affects not just individual patients but entire families and communities.</p>
+                
+                <p>As you work through this case, you'll be asked to make decisions at critical points, and your choices will influence how the scenario unfolds. The case will challenge you to apply ethical principles while considering Malaysian cultural contexts and healthcare realities.</p>
+                
+                <h3>Learning Objectives</h3>
+                <p>By completing this case study, you will be able to:</p>
+                <ul>
+                    <li>Identify key ethical issues in genetic testing and counseling</li>
+                    <li>Apply ethical principles to complex genetic information scenarios</li>
+                    <li>Navigate cultural and family dynamics in genetic counseling</li>
+                    <li>Balance individual autonomy with family implications in genetic testing</li>
+                    <li>Develop strategies for ethically sound genetic counseling in Malaysian contexts</li>
+                </ul>
+                
+                <div class="pre-knowledge">
+                    <h3>Pre-Knowledge Check</h3>
+                    <p>Before beginning this case, it's helpful to have a basic understanding of:</p>
+                    <ul>
+                        <li>Fundamental ethical principles (autonomy, beneficence, non-maleficence, justice)</li>
+                        <li>Basics of genetic inheritance patterns</li>
+                        <li>Concepts of confidentiality and privacy in healthcare</li>
+                        <li>Malaysian family structures and cultural considerations</li>
+                    </ul>
+                    <p>If you need to review these concepts, please refer to Lectures 1, 2, and 4 in this curriculum.</p>
+                </div>
+                
+                <button class="btn btn-primary next-section">Begin Case Study</button>
+            </div>
+
+            <div class="case-section" id="character-intro">
+                <h2>Meet the Characters</h2>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/doctor_female.svg" alt="Dr. Mei Ling">
+                    </div>
+                    <div class="character-info">
+                        <h3>Dr. Mei Ling</h3>
+                        <p><strong>Role:</strong> Genetic Counselor at University Hospital Kuala Lumpur</p>
+                        <p><strong>Background:</strong> Dr. Mei Ling is a dedicated genetic counselor with 8 years of experience. She is passionate about helping patients understand genetic information while respecting cultural sensitivities. She often finds herself navigating complex family dynamics in her practice.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_female.svg" alt="Aisha binti Ahmad">
+                    </div>
+                    <div class="character-info">
+                        <h3>Aisha binti Ahmad</h3>
+                        <p><strong>Role:</strong> Patient, 32-year-old elementary school teacher</p>
+                        <p><strong>Background:</strong> Aisha recently married and is planning to start a family. She has a family history of a genetic condition and has come for genetic counseling. She is close to her extended family but is concerned about how genetic information might affect her relationships and future.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_male.svg" alt="Kamal bin Ibrahim">
+                    </div>
+                    <div class="character-info">
+                        <h3>Kamal bin Ibrahim</h3>
+                        <p><strong>Role:</strong> Aisha's husband, 34-year-old software engineer</p>
+                        <p><strong>Background:</strong> Kamal is supportive of Aisha but has some reservations about genetic testing. He comes from a traditional family that places high value on privacy in health matters. He is concerned about how genetic information might affect their future children and family relationships.</p>
+                    </div>
+                </div>
+                
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="../images/characters/family_member_female.svg" alt="Fatimah binti Ahmad">
+                    </div>
+                    <div class="character-info">
+                        <h3>Fatimah binti Ahmad</h3>
+                        <p><strong>Role:</strong> Aisha's mother, 58-year-old homemaker</p>
+                        <p><strong>Background:</strong> Fatimah is very involved in her daughter's life and has strong opinions about family matters. She is protective of family privacy and concerned about potential stigma related to genetic conditions. She accompanies Aisha to some appointments and is influential in family decisions.</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+                <button class="btn btn-primary next-section">Continue to Scenario</button>
+            </div>
+
+            <div class="case-section" id="scene1">
+                <h2>Scene 1: The Initial Consultation</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/genetic_counseling_office.svg" alt="Genetic Counseling Office">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p>Dr. Mei Ling welcomes Aisha to her office at the University Hospital. Aisha has come alone for this initial consultation, though she mentions that her husband and mother are in the waiting room.</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "Thank you for coming in today, Aisha. I understand you're interested in genetic counseling because of a family history of Huntington's disease. Can you tell me more about your concerns?"</p>
+                        
+                        <p><strong>Aisha:</strong> "Yes, my father's brother died from Huntington's disease five years ago. My father is 60 and hasn't shown any symptoms, but I know this disease can appear later in life. My husband and I want to start a family soon, and I'm worried about whether I might have inherited the gene and could pass it to our children."</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "I understand your concerns. Huntington's disease is indeed hereditary, and there is a 50% chance that children of an affected parent will inherit the condition. Since your uncle had the condition, there's a possibility your father carries the gene, even if he hasn't shown symptoms yet. And if he does, you would have a 50% chance of inheriting it."</p>
+                        
+                        <p><strong>Aisha:</strong> "That's what I've read. I want to know for sure whether I carry the gene. But... I'm also worried about what this might mean for my family. My father doesn't know I'm here. He doesn't like to talk about his brother's illness, and I think he's afraid to find out if he has the gene himself."</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "This is a complex situation, Aisha. Genetic testing for Huntington's disease can provide clear information about whether you carry the gene, but the results have implications not just for you but potentially for other family members as well, including your father."</p>
+                        
+                        <p><strong>Aisha:</strong> "I hadn't thought about that. If I test positive, that would mean my father definitely has the gene, wouldn't it? Even if he doesn't want to know..."</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "Yes, that's correct. This is one of the ethical challenges with genetic testing - sometimes the results reveal information about relatives who haven't chosen to be tested themselves."</p>
+                    </div>
+                </div>
+                
+                <div class="decision-point">
+                    <h3>Decision Point: How should Dr. Mei Ling proceed?</h3>
+                    
+                    <div class="decision-options">
+                        <div class="decision-option" data-next="scene2a">
+                            <h4>Option A: Prioritize Aisha's autonomy</h4>
+                            <p>Recommend proceeding with genetic testing based on Aisha's request, focusing on her right to know her genetic status for family planning purposes. Suggest ways she might approach discussions with her father afterward if needed.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2b">
+                            <h4>Option B: Encourage family discussion first</h4>
+                            <p>Suggest that Aisha discuss the situation with her father before proceeding with testing, explaining the implications for the entire family and offering to facilitate a family meeting to address concerns.</p>
+                        </div>
+                        
+                        <div class="decision-option" data-next="scene2c">
+                            <h4>Option C: Explore alternative approaches</h4>
+                            <p>Discuss options that might provide Aisha with information for family planning without necessarily revealing her or her father's genetic status, such as preimplantation genetic diagnosis or non-disclosure testing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary prev-section">Previous</button>
+            </div>
+
+            <div class="case-section" id="scene2a">
+                <h2>Scene 2A: Prioritizing Individual Autonomy</h2>
+                
+                <div class="scene-content">
+                    <div class="scene-image">
+                        <img src="../images/scenes/genetic_counseling_office.svg" alt="Counseling Session Continues">
+                    </div>
+                    
+                    <div class="scene-narrative">
+                        <p><strong>Dr. Mei Ling:</strong> "Aisha, while this situation does involve your family, you have the right to information about your own genetic status, especially when you're planning your family. If you decide to proceed with testing, we can discuss ways to handle the implications for your father and other relatives."</p>
+                        
+                        <p><strong>Aisha:</strong> "I think I need to know. My husband and I want children, and this information is important for our decisions."</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "I understand. Before we proceed, I want to make sure you fully understand what the test results might mean for you psychologically. A positive result would mean you will develop Huntington's disease at some point in your life, though we can't predict exactly when symptoms would begin."</p>
+                        
+                        <p><strong>Aisha:</strong> "I've thought about that. It would be difficult news, but I think not knowing is harder for me right now."</p>
+                        
+                        <p>Dr. Mei Ling provides detailed information about the testing process and arranges for Aisha to meet with a psychologist who specializes in genetic testing issues. Two weeks later, Aisha returns for the test.</p>
+                        
+                        <p>One month later, Aisha returns alone to receive her results.</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "Aisha, I have your test results. The test shows that you do carry the genetic mutation for Huntington's disease."</p>
+                        
+                        <p>Aisha sits quietly for a moment, absorbing the news.</p>
+                        
+                        <p><strong>Aisha:</strong> "I... I suspected this might be the case. This means my father has it too, even though he hasn't shown symptoms yet."</p>
+                        
+                        <p><strong>Dr. Mei Ling:</strong> "Yes, that's correct. How do you feel about discussing this with your father?"</p>
+                        
+                        <p><strong>Aisha:</strong> "I don't know how to tell him. He's always avoided talking about his brother's illness. This will force him to confront something he's been trying to avoid."</p>
+                        
+                        <p>Two days later, Dr. Mei Ling receives a call from Aisha's father, who is upset after learning about Aisha's test from her mother. He demands to know why testing was done without consulting him, given the implications for his own health status.</p>
+                    </div>
+           <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
